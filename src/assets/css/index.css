@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Default Mobile media
+
+/* Media query for TABLETS */
+/* @media only screen 
+and (min-width: 600px)
+and (max-width: 1023px) {
+
+} */
+
+/* Media query for LAPTOPS AND SCREENS */
+/* @media only screen 
+and (min-width: 1024px) {
+    
+}  */

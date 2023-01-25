@@ -1,0 +1,46 @@
+.aboutUs {
+    width: 100%;
+    height: fit-content;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs__container {
+    width: 80%;
+    height: 100%;
+
+    margin: auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs__title {
+    margin: 50px auto auto auto;
+    font-size: 2.5rem;
+}
+
+.aboutUs__text {
+    margin: 50px auto auto auto;
+    font-size: 1.5rem;
+}
+
+/* Media query for TABLETS */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 1023px) {
+
+}
+
+/* Media query for LAPTOPS AND SCREENS */
+@media only screen 
+and (min-width: 1024px) {
+    
+}

@@ -1,0 +1,124 @@
+.profile {
+    width: 100%;
+    height: fit-content;
+
+    margin: 0;
+    padding: 0;
+}
+
+.profile__container {
+    width: 90%;
+    height: 100%;
+
+    margin: 50px auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__info {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__title {
+    font-size: 2.5rem;
+
+    margin: 0 auto 25px 0;
+    padding: auto;
+}
+
+.profile__signOutButton {
+    margin: 0 0 25px auto;
+
+    width: 100%;
+    padding: 25px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    border-radius: 25px;
+    background-color: #EBA071;
+    border: 3px solid #EBA071;
+    color: #150811;
+
+    transition: 500ms;
+}
+
+.profile__signOutButton:hover {
+    background-color: transparent;
+    border: 3px solid #EBA071;
+}
+
+.profile__activity {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.profile__editSection {
+    margin: 0 0 25px auto;
+    width: 100%;
+    padding: 10px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    border-radius: 25px;
+    background-color: transparent;
+    border: 3px solid #EBA071;
+    color: #150811;
+
+    box-shadow: rgba(235, 160, 113, 0.25) 0px 25px 20px -20px;
+
+
+    transition: 500ms;
+}
+
+.profile__editSection:hover {
+    background-color: #EBA071;
+    border: 3px solid #EBA071;
+}
+
+.profile__cardsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media query for TABLETS */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 1023px) {
+    
+}
+
+
+/* Media query for LAPTOPS AND SCREENS */
+@media only screen 
+and (min-width: 1024px) {
+    
+    .profile__activity {
+        flex-direction: column;
+    }
+
+    .profile__signOutButton {
+        width: 25%;
+    }
+
+    .profile__editSection {
+
+        width: 25%;
+    }
+
+    .profile__cardsContainer {
+        flex-direction: row;
+    }
+}

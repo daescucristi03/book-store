@@ -1,0 +1,133 @@
+/* Default Mobile media */
+.header {
+    width: 100%;
+    height: 80vh;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header__container {
+    width: 100%;
+    height: 100%;
+
+    margin: 50px auto;
+    padding: 0;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header__image {
+    height: 60vh;
+    width: fit-content;
+
+    margin: auto;
+
+    display: none;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header__text {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 2.5rem;
+}
+
+.header__buttonContainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+
+    margin:  0 auto;
+}
+
+.header__button{
+    margin: 25px auto 25px 0;
+    width: 100%;
+    padding: 25px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+
+    border-radius: 25px;
+    background-color: #EBA071;
+    border: 3px solid #EBA071;
+    color: #150811;
+
+    transition: 500ms;
+}
+
+.header__button:hover {
+    border: 3px solid #FDF9F3;
+    color: #FDF9F3;
+}
+
+/* Media query for TABLETS */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 1023px) {
+    .header {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .header__container {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+      .header__image {
+        display: none;
+    }
+
+      .header__text {
+        width: 90%;
+        margin: 50px auto;
+        font-size: 2.5rem;
+    }
+
+    .header__button {
+        font-size: 0.7rem;
+
+        width: 50%;
+    }
+}
+
+/* Media query for LAPTOPS AND SCREENS */
+@media only screen 
+and (min-width: 1024px) {
+    .header {
+        width: 100%;
+        height: 80vh;
+    }
+
+  .header__container {
+    width: 80%;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .header__image {
+    margin: auto 50px;
+    display: block;
+  }
+
+  .header__text {
+    margin: auto;
+    font-size: 2.5rem;
+    }
+
+    .header__button {
+        width: 50%;   
+    }
+
+} 

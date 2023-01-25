@@ -1,0 +1,53 @@
+.bestSeller {
+    width: 100%;
+    height: fit-content;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestSeller__container {
+    width: 90%;
+    height: 100%;
+
+    margin: auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bestSeller__title {
+    margin: 50px auto auto auto;
+    font-size: 2.5rem;
+}
+
+hr {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Media query for TABLETS */
+@media only screen 
+and (min-width: 600px)
+and (max-width: 1023px) {
+
+}
+
+/* Media query for LAPTOPS AND SCREENS */
+@media only screen 
+and (min-width: 1024px) {
+    .bestSeller__container {
+        width: 90%;
+        margin:  auto;
+        padding: auto;
+
+        justify-content: space-between;
+        flex-direction: row;    
+    }
+}
