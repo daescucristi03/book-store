@@ -1,0 +1,66 @@
+.productPage {
+    box-sizing: border-box;
+
+    width: 90%;
+    height: fit-content;
+
+    margin: 50px auto;
+    padding: 0;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.productPage__container {
+    box-sizing: content-box;
+
+    width: 100%;
+    height: fit-content;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.productPage__image {
+    max-width: 25vw;
+    object-fit: contain;
+
+    margin: auto;
+}
+
+.productPage__element {
+    margin: 5px auto;
+}
+
+
+.productPage__button {
+    margin: 25px 5px;
+    padding: 10px 25px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 600ms;
+    border-radius: 25px;
+}
+
+.productPage__button:hover {
+    background-color: #EBA071;
+    color: #FDF9F3;
+}
+
+/* Media query for TABLETS */
+@media only screen 
+and (min-width: 1024px){
+    .productPage {
+        flex-direction: row;
+    }
+}

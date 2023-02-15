@@ -29,7 +29,7 @@ function Navbar() {
                 <p className='navbar__text'>Products</p>
             </Link>
 
-            <Link to='/cart' className='navbar__item'>
+            {/* <Link to='/cart' className='navbar__item'>
                 <ShoppingCartIcon className='navbar__icon'/>
                 <p className='navbar__text'>Cart</p>
             </Link>
@@ -37,7 +37,7 @@ function Navbar() {
             <Link to={user ? '/profile' : '/login'} className='navbar__item'>
                 <PersonIcon className='navbar__icon'/>
                 <p className='navbar__text'>Profile</p>
-            </Link>
+            </Link> */}
         </div>
     </div>
   )

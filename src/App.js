@@ -8,7 +8,7 @@ import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
-import ProductPage from './pages/ProductPage/ProductPage';
+import ProductPage from './pages/Product/ProductPage';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Profile from './pages/Profile/Profile';

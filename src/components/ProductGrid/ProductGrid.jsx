@@ -9,7 +9,7 @@ function ProductGrid() {
         {value: 'All', text: 'All'},
         {value: 'History', text: 'History'},
         {value: 'Art', text: 'Art & Architecture'},
-        {value: 'Filosophy', text: 'Filosophy'},
+        {value: 'Filosophy', text: 'Philosophy'},
       ];
     
       const [selected, setSelected] = useState(options[0].value);
@@ -44,6 +44,7 @@ function ProductGrid() {
                     image = {data.image}
                     category = {data.category}
                     isBestSeller = {data.isBestSeller}
+                    buyLink = {data.buyLink}
                     />
                 )   
             }

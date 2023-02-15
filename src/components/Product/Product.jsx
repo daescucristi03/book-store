@@ -4,13 +4,13 @@ import { useStatevalue } from '../StateProvider/StateProvider';
 
 import './Product.css'
 
-function Product({id, title, author, description, price, rating, image, category, isBestSeller}) {
+function Product({id, title, author, description, price, rating, image, category, isBestSeller, buyLink}) {
   const [ { basket }, dispatch ] = useStatevalue();
   
-  const addToBasket = () => {
+  const openProductPage = () => {
     // dispatch item into the data layer
     dispatch({
-      type: 'ADD_TO_BASKET',
+      type: 'SELECT_PRODUCT',
       item: {
         id: id,
         title: title,
@@ -20,18 +20,17 @@ function Product({id, title, author, description, price, rating, image, category
         rating: rating,
         image: image,
         category: category,
-        isBestSeller: isBestSeller
+        isBestSeller: isBestSeller,
+        buyLink: buyLink
       }
     })
   }
 
   return (
     <div className='product'>
-      <div className='product__container'>
-        <button className='product__button' onClick={addToBasket}>
+      <Link to="/product" className='product__container' onClick={openProductPage}>
         <img alt='product' className='product__image' src={`/products/${image}`}/>
-        </button>
-      </div>
+      </Link>
     </div>
   )
 }
